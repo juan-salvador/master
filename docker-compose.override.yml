@@ -1,0 +1,13 @@
+version: '2'
+services:
+
+  master:
+    container_name: master_wordpress
+    environment:
+      VIRTUAL_HOST: 'local.master.jc'
+    volumes:
+      - ./app/:/apps/backend/:rw
+networks:
+  default:
+    external:
+      name: juan_network

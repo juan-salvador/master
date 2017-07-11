@@ -1,0 +1,6 @@
+version: '2'
+services:
+  master:
+    image: master_image
+    build:
+      context: ./docker/
